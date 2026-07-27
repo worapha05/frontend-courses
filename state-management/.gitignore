@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+.cache/
+*.log
+.DS_Store
+coverage/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+01-beginner/examples/05-vite-shopdesk/dist/
+
+# Bootcamp root ignores
+package-lock.json
+*.tsbuildinfo
+.cache/
