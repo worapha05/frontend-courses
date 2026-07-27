@@ -1,0 +1,13 @@
+// pages/_home.scss
+@use '../abstracts' as *;
+
+.hero {
+  display: grid;
+  gap: $space-4;
+  margin-bottom: $space-8;
+
+  .lede {
+    max-width: 40rem;
+    font-size: 1.05rem;
+  }
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML5 Semantics — Aurora Studio</title>
+    <meta name="description" content="ตัวอย่าง HTML5 Semantic Tags สำหรับ SEO และ Accessibility" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">ข้ามไปเนื้อหาหลัก</a>
+
+    <header class="site-header">
+      <p class="brand">
+        <a href="/">Aurora Studio</a>
+      </p>
+      <nav aria-label="หลัก">
+        <ul class="nav-list">
+          <li><a href="#services" aria-current="page">บริการ</a></li>
+          <li><a href="#work">ผลงาน</a></li>
+          <li><a href="#about">เกี่ยวกับ</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <article>
+        <header class="article-header">
+          <h1>ออกแบบอินเทอร์เฟซที่อ่านออก ทั้งคนและเครื่อง</h1>
+          <p>หน้านี้สาธิตการใช้ landmark อย่างถูกต้อง — ไม่ใช่กอง <code>&lt;div&gt;</code> ทึบ ๆ</p>
+        </header>
+
+        <section id="services" aria-labelledby="services-heading">
+          <h2 id="services-heading">บริการ</h2>
+          <ul class="service-list">
+            <li>
+              <h3>UX Research</h3>
+              <p>สัมภาษณ์ผู้ใช้และแปลง insight เป็น wireframe</p>
+            </li>
+            <li>
+              <h3>UI Systems</h3>
+              <p>สร้าง design tokens และ component library</p>
+            </li>
+            <li>
+              <h3>Accessibility Audit</h3>
+              <p>ตรวจ WCAG และแก้ landmark / contrast / keyboard</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="work" aria-labelledby="work-heading">
+          <h2 id="work-heading">ผลงานล่าสุด</h2>
+          <article class="case">
+            <h3>Checkout ที่ลด drop-off 18%</h3>
+            <p>
+              ปรับลำดับฟอร์มและสถานะ error ให้ชัด — ใช้ <code>&lt;form&gt;</code> + label ที่ผูกกับ
+              input จริง
+            </p>
+          </article>
+        </section>
+
+        <section id="about" aria-labelledby="about-heading">
+          <h2 id="about-heading">เกี่ยวกับเรา</h2>
+          <p>
+            Aurora Studio เป็นทีมออกแบบผลิตภัณฑ์ดิจิทัลที่เชื่อว่า semantic HTML คือชั้นแรกของ
+            design system
+          </p>
+        </section>
+      </article>
+
+      <aside aria-label="บทความแนะนำ">
+        <h2>อ่านต่อ</h2>
+        <ul>
+          <li><a href="#">First Rule of ARIA</a></li>
+          <li><a href="#">Landmark Roles อธิบายสั้น ๆ</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <p>ติดต่อ: <a href="mailto:hello@aurora.example">hello@aurora.example</a></p>
+      <p><small>&copy; 2026 Aurora Studio</small></p>
+    </footer>
+  </body>
+</html>

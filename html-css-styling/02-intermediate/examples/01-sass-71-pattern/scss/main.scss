@@ -1,0 +1,9 @@
+// main.scss — จุดเข้าเดียวของ 7-1 Pattern
+@use 'base/reset';
+@use 'base/typography';
+@use 'layout/header';
+@use 'components/button';
+@use 'components/card';
+@use 'pages/home';
+@use 'themes/dark';
+@use 'vendors';

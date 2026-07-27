@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-sans;
+  background: $color-bg;
+  color: $color-ink;
+  line-height: 1.55;
+}
+
+a {
+  color: $color-brand;
+}

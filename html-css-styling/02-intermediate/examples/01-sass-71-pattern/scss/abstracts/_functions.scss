@@ -1,0 +1,9 @@
+// abstracts/_functions.scss
+@use 'sass:math';
+
+/// Fluid size ระหว่าง min และ max ตาม viewport
+@function fluid($min-px, $max-px, $min-vw: 360, $max-vw: 1200) {
+  $slope: math.div($max-px - $min-px, $max-vw - $min-vw);
+  $intercept: $min-px - $slope * $min-vw;
+  @return clamp(#{$min-px}px, #{$intercept}px + #{$slope * 100}vw, #{$max-px}px);
+}

@@ -1,0 +1,46 @@
+/* LESS basics — compile with: npx lessc styles.less styles.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Sarabun', system-ui, sans-serif;
+  background: #fff7ed;
+  color: #1c1917;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #fed7aa;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.panel h1 {
+  margin-top: 0;
+  color: #b45309;
+}
+
+.panel p {
+  color: #78716c;
+}
+
+.panel .cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background: #b45309;
+  color: #fff7ed;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
+.panel .cta:hover {
+  filter: brightness(1.05);
+}

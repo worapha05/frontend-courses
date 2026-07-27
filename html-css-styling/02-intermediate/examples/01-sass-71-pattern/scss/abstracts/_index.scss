@@ -1,0 +1,4 @@
+// abstracts/_index.scss — forward ให้ชั้นอื่น @use "abstracts" ได้
+@forward 'variables';
+@forward 'mixins';
+@forward 'functions';

@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #fafaf9;
+  --ink: #1c1917;
+  --muted: #78716c;
+  --accent: #c2410c;
+  --surface: #fff;
+  --line: #e7e5e4;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Sarabun', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+a {
+  color: var(--accent);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.logo {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.9rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* Centering ทั้ง viewport ส่วนหนึ่ง */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+  background: radial-gradient(circle at 20% 20%, #fed7aa, transparent 40%),
+    radial-gradient(circle at 80% 0%, #ffedd5, transparent 35%), #fff7ed;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-inner {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Equal-height cards + footer link ชิดล่าง */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 220px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.1rem;
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  flex: 1;
+}
+
+.card a {
+  margin-top: auto;
+  align-self: flex-start;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+code {
+  font-size: 0.85em;
+}

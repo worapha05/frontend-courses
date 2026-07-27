@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Sarabun', system-ui, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.compare {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.box {
+  width: 200px;
+  padding: 24px;
+  border: 8px solid #38bdf8;
+  background: #1e293b;
+}
+
+/* สาธิตเท่านั้น — ไม่ใช้กับทั้งเอกสาร */
+.content-demo {
+  box-sizing: content-box;
+}
+
+.border-demo {
+  box-sizing: border-box;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* ---- Specificity demo (จงใจซ้อนกัน) ---- */
+p {
+  color: #64748b; /* 0,0,0,1 */
+}
+
+.msg {
+  color: #22c55e; /* 0,0,1,0 — ชนะ p */
+}
+
+.msg.highlight {
+  color: #eab308; /* 0,0,2,0 */
+}
+
+#target {
+  color: #f43f5e; /* 0,1,0,0 — ชนะทุกอย่างด้านบน */
+}
+
+.rules {
+  background: #1e293b;
+  border-radius: 8px;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.note {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: #1e293b;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}

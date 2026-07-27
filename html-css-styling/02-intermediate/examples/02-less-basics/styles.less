@@ -1,0 +1,62 @@
+/* LESS basics — compile with: npx lessc styles.less styles.css */
+@accent: #b45309;
+@ink: #1c1917;
+@muted: #78716c;
+@bg: #fff7ed;
+@surface: #ffffff;
+@line: #fed7aa;
+@radius: 10px;
+@space: 1rem;
+
+.rounded(@r: @radius) {
+  border-radius: @r;
+}
+
+.card-base() {
+  background: @surface;
+  border: 1px solid @line;
+  .rounded();
+  padding: @space;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Sarabun', system-ui, sans-serif;
+  background: @bg;
+  color: @ink;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+.panel {
+  .card-base();
+
+  h1 {
+    margin-top: 0;
+    color: @accent;
+  }
+
+  p {
+    color: @muted;
+  }
+
+  .cta {
+    display: inline-block;
+    margin-top: @space;
+    padding: 0.6rem 1rem;
+    background: @accent;
+    color: #fff7ed;
+    text-decoration: none;
+    font-weight: 700;
+    .rounded(999px);
+
+    &:hover {
+      filter: brightness(1.05);
+    }
+  }
+}

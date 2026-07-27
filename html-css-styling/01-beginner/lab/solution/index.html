@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nori Press — Digital Publishing</title>
+    <meta name="description" content="สำนักพิมพ์ดิจิทัล Nori Press — Lab Beginner เฉลย" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">ข้ามไปเนื้อหาหลัก</a>
+
+    <header class="site-header">
+      <p class="brand"><a href="/">Nori Press</a></p>
+      <nav aria-label="หลัก">
+        <ul class="nav-list">
+          <li><a href="#featured" aria-current="page">แนะนำ</a></li>
+          <li><a href="#catalog">หนังสือ</a></li>
+          <li><a href="#about">เกี่ยวกับ</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="shell">
+      <main id="main">
+        <article>
+          <header class="article-header">
+            <p class="eyebrow">ฉบับประจำเดือน</p>
+            <h1>ออกแบบหน้าอ่านที่ตาไม่ล้า ในยุคคอนเทนต์ยาว</h1>
+            <p class="lede">
+              Nori Press รวมบทความและหนังสืออิเล็กทรอนิกส์ที่เน้นความชัดของ hierarchy และ layout
+              ที่ควบคุมได้ด้วย Flexbox กับ CSS Grid
+            </p>
+            <p class="cta-row">
+              <a class="button" href="#catalog">ดูหนังสือใหม่</a>
+              <a class="button button--ghost" href="#about">เกี่ยวกับเรา</a>
+            </p>
+          </header>
+
+          <section id="featured" aria-labelledby="featured-heading">
+            <h2 id="featured-heading">บทความเด่น</h2>
+            <p>
+              Semantic HTML ไม่ได้ทำให้หน้าดูสวยขึ้นทันที — แต่ทำให้เครื่องอ่านหน้าจอ ค้นหา
+              และทีมที่มาต่อได้เข้าใจโครงเดียวกันกับที่คุณตั้งใจออกแบบ
+            </p>
+          </section>
+
+          <section id="catalog" aria-labelledby="catalog-heading">
+            <h2 id="catalog-heading">หนังสือใหม่</h2>
+            <div class="book-grid">
+              <article class="book-card">
+                <h3>Grid in the Wild</h3>
+                <p>กรณีศึกษา layout นิตยสารบนเว็บ</p>
+                <a class="text-link" href="#">อ่านตัวอย่าง</a>
+              </article>
+              <article class="book-card">
+                <h3>Tokens First</h3>
+                <p>สร้างระบบสีและ spacing ให้ทีมใหญ่ใช้ร่วมกัน</p>
+                <a class="text-link" href="#">อ่านตัวอย่าง</a>
+              </article>
+              <article class="book-card">
+                <h3>Motion with Care</h3>
+                <p>Animation ที่สวยโดยไม่ทำร้าย vestibular</p>
+                <a class="text-link" href="#">อ่านตัวอย่าง</a>
+              </article>
+            </div>
+          </section>
+
+          <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">เกี่ยวกับ Nori Press</h2>
+            <p>
+              เราเริ่มจากบล็อกเล็ก ๆ เรื่อง CSS และเติบโตเป็นสำนักพิมพ์ดิจิทัล ที่เชื่อว่า
+              foundation ที่ดีสำคัญกว่า library ใหม่ทุกไตรมาส
+            </p>
+          </section>
+        </article>
+      </main>
+
+      <aside aria-label="หนังสือแนะนำ">
+        <h2>แนะนำสัปดาห์นี้</h2>
+        <ol class="picks">
+          <li>
+            <a href="#">The Cascade Handbook</a>
+            <span>เข้าใจลำดับการชนะของ CSS</span>
+          </li>
+          <li>
+            <a href="#">Flex Mental Models</a>
+            <span>แกนหลัก / แกนขวาง ในหนึ่งภาพ</span>
+          </li>
+          <li>
+            <a href="#">Accessible Landmarks</a>
+            <span>Skip link และ aria-label ที่ถูกจุด</span>
+          </li>
+        </ol>
+      </aside>
+    </div>
+
+    <footer id="contact" class="site-footer">
+      <p>
+        ติดต่อบรรณาธิการ:
+        <a href="mailto:hello@noripress.example">hello@noripress.example</a>
+      </p>
+      <p><small>&copy; 2026 Nori Press</small></p>
+    </footer>
+  </body>
+</html>

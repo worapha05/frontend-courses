@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Box Model & Specificity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>Box Model & Specificity</h1>
+
+      <section aria-labelledby="box-heading">
+        <h2 id="box-heading">เปรียบเทียบ content-box vs border-box</h2>
+        <div class="compare">
+          <div class="box content-demo">
+            <p>content-box</p>
+            <p class="meta">width: 200px + padding + border</p>
+          </div>
+          <div class="box border-demo">
+            <p>border-box</p>
+            <p class="meta">width: 200px รวมทุกอย่าง</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="spec-heading">
+        <h2 id="spec-heading">Specificity War (อย่าทำแบบนี้ในโปรดักชัน)</h2>
+        <p id="target" class="msg highlight">ข้อความนี้ถูกหลาย rule แย่งกันย้อมสี</p>
+        <ol class="rules">
+          <li><code>p</code> → น้ำหนักต่ำสุด</li>
+          <li><code>.msg</code> → class ชนะ element</li>
+          <li><code>.msg.highlight</code> → สอง class</li>
+          <li><code>#target</code> → ID ชนะ class</li>
+        </ol>
+        <p class="note">เปิด DevTools → ดูแผง Styles ว่า rule ไหนถูกขีดฆ่า (strikethrough)</p>
+      </section>
+    </main>
+  </body>
+</html>

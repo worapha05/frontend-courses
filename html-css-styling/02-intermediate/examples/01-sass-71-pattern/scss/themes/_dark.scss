@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  body {
+    background: #0c0a09;
+    color: #fafaf9;
+  }
+
+  .site-header,
+  .card {
+    background: #1c1917;
+    border-color: #44403c;
+    color: #fafaf9;
+  }
+
+  .card__title {
+    color: #fafaf9;
+  }
+
+  p,
+  .card__body {
+    color: #a8a29e;
+  }
+}

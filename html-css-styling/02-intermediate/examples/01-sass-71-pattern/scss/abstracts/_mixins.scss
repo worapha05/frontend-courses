@@ -1,0 +1,22 @@
+// abstracts/_mixins.scss
+@use 'variables' as *;
+
+@mixin respond-to($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin focus-ring($color: $color-accent) {
+  &:focus-visible {
+    outline: 2px solid $color;
+    outline-offset: 2px;
+  }
+}
+
+@mixin card-surface {
+  background: $color-surface;
+  border: 1px solid $color-line;
+  border-radius: $radius-md;
+  box-shadow: 0 8px 24px rgb(28 25 23 / 0.06);
+}

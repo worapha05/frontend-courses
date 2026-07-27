@@ -1,0 +1,27 @@
+node_modules/
+dist/
+build/
+.css/
+*.css.map
+.DS_Store
+.env
+.env.local
+*.log
+.vite/
+coverage/
+
+# Bootcamp root ignores
+.prettierrc
+*.tsbuildinfo
+.vite/
+.css/
+*.css.map
+.turbo/
+out/
+.vercel/
+.nuxt/
+.output/
+.svelte-kit/
+.next/
+.cache/
+package-lock.json

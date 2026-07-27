@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flexbox Patterns</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="logo" href="#">FlexLab</a>
+      <nav aria-label="หลัก">
+        <ul class="nav-links">
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Patterns</a></li>
+          <li><a href="#">Lab</a></li>
+        </ul>
+      </nav>
+      <a class="btn" href="#">เริ่มต้น</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <h1 id="hero-title">จัดเรียง 1 มิติด้วย Flexbox</h1>
+          <p>Navbar · Centering · Equal-height cards</p>
+        </div>
+      </section>
+
+      <section class="cards" aria-label="การ์ดตัวอย่าง">
+        <article class="card">
+          <h2>สั้น</h2>
+          <p>เนื้อหาน้อย</p>
+          <a href="#">รายละเอียด</a>
+        </article>
+        <article class="card">
+          <h2>ยาวกว่า</h2>
+          <p>
+            การ์ดนี้มีข้อความยาวกว่าเพื่อน แต่ความสูงแถวจะเท่ากัน เพราะ Flex items ในแถวเดียวกัน
+            stretch ตามแกนขวาง
+          </p>
+          <a href="#">รายละเอียด</a>
+        </article>
+        <article class="card">
+          <h2>กลาง ๆ</h2>
+          <p>ปุ่มถูกดันลงล่างด้วย <code>margin-top: auto</code></p>
+          <a href="#">รายละเอียด</a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

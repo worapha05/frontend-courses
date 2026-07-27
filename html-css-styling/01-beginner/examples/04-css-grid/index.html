@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Grid — Areas & Auto-fit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <header class="site-header">
+      <strong>GridLab</strong>
+      <span>template areas + auto-fit</span>
+    </header>
+
+    <aside class="sidebar" aria-label="เมนูด้านข้าง">
+      <nav>
+        <ul>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Tracks</a></li>
+          <li><a href="#">Areas</a></li>
+          <li><a href="#">Lines</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1>CSS Grid ควบคุม 2 มิติ</h1>
+      <p>
+        โครงหน้าใช้ <code>grid-template-areas</code> ส่วนการ์ดด้านล่างใช้
+        <code>repeat(auto-fit, minmax(200px, 1fr))</code>
+      </p>
+
+      <div class="gallery" aria-label="การ์ดอัตโนมัติ">
+        <article>Track A</article>
+        <article>Track B</article>
+        <article>Track C</article>
+        <article>Track D</article>
+        <article>Track E</article>
+        <article>Track F</article>
+      </div>
+
+      <section class="span-demo" aria-labelledby="span-title">
+        <h2 id="span-title">Span ตามเส้น Grid</h2>
+        <div class="manual-grid">
+          <div class="cell wide">col 1 / span 2</div>
+          <div class="cell">B</div>
+          <div class="cell tall">row span 2</div>
+          <div class="cell">D</div>
+          <div class="cell">E</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">Footer · Grid area</footer>
+  </body>
+</html>

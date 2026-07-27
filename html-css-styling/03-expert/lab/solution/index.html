@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harbor Console — Lab Solution</title>
+    <script>
+      // Anti-flash: รันก่อน paint — อย่าพึ่ง useEffect เป็นตัวตั้ง theme แรก
+      (function () {
+        try {
+          var stored = localStorage.getItem('harbor-theme');
+          var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored || (preferDark ? 'dark' : 'light');
+          if (theme === 'dark') document.documentElement.setAttribute('data-color-scheme', 'dark');
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

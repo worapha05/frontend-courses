@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harbor UI — Marketing (SASS)</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="brand">Harbor UI</p>
+      <button type="button" class="button button--ghost" id="theme">สลับธีม</button>
+    </header>
+    <main class="container">
+      <h1>Mini Design System สำหรับสองทีม</h1>
+      <p>Marketing shell นี้คอมไพล์จาก SASS 7-1 — สี brand ตรงกับแอป Tailwind</p>
+      <p>
+        <a class="button button--primary" href="#cards">ดู primitives</a>
+        <a class="button button--ghost" href="/">เปิดแอป demo</a>
+      </p>
+      <div id="cards" class="card-grid" style="margin-top: 2rem">
+        <article class="card">
+          <h2 class="card__title">Tokens</h2>
+          <p class="card__body">$color-brand = #0f766e</p>
+        </article>
+        <article class="card">
+          <h2 class="card__title">Mixins</h2>
+          <p class="card__body">respond-to · focus-ring</p>
+        </article>
+        <article class="card">
+          <h2 class="card__title">Responsive</h2>
+          <p class="card__body">1 คอลัมน์บนมือถือ, 3 คอลัมน์ตั้งแต่ md</p>
+        </article>
+      </div>
+    </main>
+    <script>
+      document.getElementById('theme').onclick = () => {
+        const r = document.documentElement;
+        r.setAttribute('data-theme', r.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+      };
+    </script>
+  </body>
+</html>

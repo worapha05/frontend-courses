@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans 3', 'Sarabun', system-ui, sans-serif;
+  color: #1c1917;
+  background: #f6f4ef;
+  line-height: 1.55;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: #0f766e;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(28px, 21.1428571429px + 1.9047619048vw, 44px);
+}
+
+p {
+  color: #78716c;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e7e5e4;
+}
+
+.site-header .brand {
+  margin: 0;
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 700;
+}
+
+.container {
+  width: min(960px, 100% - 2rem);
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: 2px;
+}
+
+.button--primary {
+  background: #0f766e;
+  color: #ecfdf5;
+}
+
+.button--ghost {
+  background: transparent;
+  color: #0f766e;
+  box-shadow: inset 0 0 0 1px #0f766e;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(28, 25, 23, 0.06);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card__title {
+  margin: 0;
+  color: #1c1917;
+  font-size: 1.15rem;
+}
+
+.card__body {
+  margin: 0;
+  flex: 1;
+}
+
+.card__action {
+  margin-top: auto;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.hero {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero .lede {
+  max-width: 40rem;
+  font-size: 1.05rem;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+[data-theme='dark'] body {
+  background: #0c0a09;
+  color: #fafaf9;
+}
+
+[data-theme='dark'] .site-header,
+[data-theme='dark'] .card {
+  background: #1c1917;
+  border-color: #44403c;
+  color: #fafaf9;
+}
+
+[data-theme='dark'] .card__title {
+  color: #fafaf9;
+}
+
+[data-theme='dark'] p,
+[data-theme='dark'] .card__body {
+  color: #a8a29e;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Variables · Responsive · Motion</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <strong>TokenLab</strong>
+      <button type="button" id="theme-toggle" aria-pressed="false">สลับ Dark Mode</button>
+    </header>
+
+    <main class="layout">
+      <section class="panel reveal">
+        <h1>Design Tokens ด้วย CSS Variables</h1>
+        <p>
+          สี, ระยะ, รัศมี อยู่ใน <code>:root</code> — กดปุ่มเพื่อสลับธีมผ่าน
+          <code>data-theme</code>
+        </p>
+        <button type="button" class="cta">ปุ่มหลัก</button>
+      </section>
+
+      <section class="stats" aria-label="ตัวเลขตัวอย่าง">
+        <article class="stat reveal" style="--delay: 80ms">CLS ↓</article>
+        <article class="stat reveal" style="--delay: 160ms">Tokens ✓</article>
+        <article class="stat reveal" style="--delay: 240ms">Motion ✓</article>
+      </section>
+    </main>
+
+    <script>
+      const btn = document.getElementById('theme-toggle');
+      btn.addEventListener('click', () => {
+        const root = document.documentElement;
+        const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        btn.setAttribute('aria-pressed', String(next === 'dark'));
+      });
+    </script>
+  </body>
+</html>

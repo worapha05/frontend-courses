@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .panel {
+    @apply rounded-2xl bg-white p-6 shadow-soft ring-1 ring-stone-200
+      dark:bg-brand-800 dark:ring-brand-600;
+  }
+}

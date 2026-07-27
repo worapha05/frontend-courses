@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SASS 7-1 Pattern</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="brand">Sasslab</p>
+      <button type="button" class="button button--ghost" id="theme-btn">สลับธีม</button>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>โครงสร้าง 7-1 ที่ทีมขยายได้</h1>
+        <p class="lede">abstracts → base → layout → components → pages → themes → vendors</p>
+        <p>
+          <a class="button button--primary" href="#">เริ่มใช้งาน</a>
+        </p>
+      </section>
+
+      <div class="card-grid">
+        <article class="card">
+          <h2 class="card__title">Variables</h2>
+          <p class="card__body">เก็บ token ใน abstracts</p>
+          <a class="card__action button button--ghost" href="#">ดูโค้ด</a>
+        </article>
+        <article class="card">
+          <h2 class="card__title">Mixins</h2>
+          <p class="card__body">focus-ring, respond-to, card-surface</p>
+          <a class="card__action button button--ghost" href="#">ดูโค้ด</a>
+        </article>
+        <article class="card">
+          <h2 class="card__title">Functions</h2>
+          <p class="card__body">fluid() สำหรับ typography</p>
+          <a class="card__action button button--ghost" href="#">ดูโค้ด</a>
+        </article>
+      </div>
+    </main>
+
+    <script>
+      document.getElementById('theme-btn').addEventListener('click', () => {
+        const root = document.documentElement;
+        root.setAttribute(
+          'data-theme',
+          root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark',
+        );
+      });
+    </script>
+  </body>
+</html>
