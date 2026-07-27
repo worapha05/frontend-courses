@@ -1,0 +1,15 @@
+{
+  "name": "03-nitro-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "nuxt": "^3.15.1",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  }
+}

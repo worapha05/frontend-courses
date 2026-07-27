@@ -1,0 +1,9 @@
+{
+  "name": "vue-nuxt-beginner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vue + Nuxt Beginner Bootcamp",
+  "scripts": {
+    "dev:reactivity": "npm run dev --prefix examples/01-reactivity-ref-reactive"
+  }
+}

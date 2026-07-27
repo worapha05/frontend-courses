@@ -1,0 +1,10 @@
+{
+  "name": "vue-nuxt-expert",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vue + Nuxt Expert Bootcamp",
+  "scripts": {
+    "dev:grid": "npm run dev --prefix examples/01-data-grid",
+    "verify": "bash scripts/verify.sh"
+  }
+}
