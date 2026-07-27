@@ -1,0 +1,22 @@
+{
+  "name": "01-stores-context",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
+  },
+  "dependencies": {
+    "svelte": "^5.19.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^4.0.0",
+    "@sveltejs/kit": "^2.16.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "svelte-check": "^4.1.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
+  }
+}

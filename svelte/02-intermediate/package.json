@@ -1,0 +1,20 @@
+{
+  "name": "svelte-intermediate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Svelte Intermediate Bootcamp — workspace",
+  "scripts": {
+    "dev:stores": "npm run dev --workspace=examples/01-stores-context",
+    "dev:lifecycle": "npm run dev --workspace=examples/02-lifecycle-transitions",
+    "dev:kit": "npm run dev --workspace=examples/03-sveltekit-routing-load",
+    "dev:forms": "npm run dev --workspace=examples/04-form-actions",
+    "dev:lab": "npm run dev --workspace=lab/solution"
+  },
+  "workspaces": [
+    "examples/01-stores-context",
+    "examples/02-lifecycle-transitions",
+    "examples/03-sveltekit-routing-load",
+    "examples/04-form-actions",
+    "lab/solution"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "svelte-expert",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Svelte Expert Bootcamp — workspace",
+  "scripts": {
+    "dev:grid": "npm run dev --workspace=examples/01-data-grid-performance",
+    "dev:adapters": "npm run dev --workspace=examples/02-rendering-adapters",
+    "dev:auth": "npm run dev --workspace=examples/03-hooks-auth-rbac",
+    "dev:lab": "npm run dev --workspace=lab/solution"
+  },
+  "workspaces": [
+    "examples/01-data-grid-performance",
+    "examples/02-rendering-adapters",
+    "examples/03-hooks-auth-rbac",
+    "lab/solution"
+  ]
+}

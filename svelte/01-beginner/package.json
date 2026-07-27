@@ -1,0 +1,20 @@
+{
+  "name": "svelte-beginner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Svelte Beginner Bootcamp — workspace",
+  "scripts": {
+    "dev:reactivity": "npm run dev --workspace=examples/01-compiler-reactivity",
+    "dev:runes": "npm run dev --workspace=examples/02-runes-state-derived",
+    "dev:components": "npm run dev --workspace=examples/03-templating-components",
+    "dev:events": "npm run dev --workspace=examples/04-events-snippets",
+    "dev:lab": "npm run dev --workspace=lab/solution"
+  },
+  "workspaces": [
+    "examples/01-compiler-reactivity",
+    "examples/02-runes-state-derived",
+    "examples/03-templating-components",
+    "examples/04-events-snippets",
+    "lab/solution"
+  ]
+}

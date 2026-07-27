@@ -1,0 +1,15 @@
+node_modules
+.DS_Store
+dist
+build
+.svelte-kit
+.env
+.env.*
+!.env.example
+vite.config.ts.timestamp-*
+
+# Bootcamp root ignores
+package-lock.json
+.svelte-kit/
+vite.config.ts.timestamp-*
+node_modules

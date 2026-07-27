@@ -1,0 +1,114 @@
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --accent: #0d9488;
+  --accent-soft: #ccfbf1;
+  --border: #e2e8f0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: linear-gradient(180deg, #f0fdfa 0%, var(--bg) 35%), var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.75rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+  margin-top: 1rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  background: var(--accent);
+  color: #fff;
+}
+
+button.ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+.timer {
+  font-variant-numeric: tabular-nums;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.progress-track {
+  height: 12px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+  margin-top: 0.75rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0f766e, #14b8a6);
+  border-radius: inherit;
+}
+
+.notifications {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 0.85rem;
+}
+
+.toast {
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  border: 1px solid #99f6e4;
+  color: #134e4a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}

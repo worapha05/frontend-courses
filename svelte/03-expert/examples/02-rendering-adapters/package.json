@@ -1,0 +1,28 @@
+{
+  "name": "02-rendering-adapters",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
+  },
+  "dependencies": {
+    "svelte": "^5.19.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^4.0.0",
+    "@sveltejs/adapter-node": "^5.2.12",
+    "@sveltejs/adapter-static": "^3.0.8",
+    "@sveltejs/adapter-vercel": "^5.5.3",
+    "@sveltejs/kit": "^2.16.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "svelte-check": "^4.1.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
+  }
+}
