@@ -1,3 +1,7 @@
+📍 **Nav:** [`🏠 Dev Learning Courses Hub`](https://github.com/worapha05/dev-learning-courses-hub/blob/main/README.md) | [`📂 Frontend Courses Index`](../README.md) | 📝 [`Prompt File`](https://github.com/worapha05/ai-learning-prompts-hub/blob/main/course-generation/frontend-courses/svelte-prompt.md)
+
+---
+
 # Svelte Mastery Bootcamp — Zero to Expert
 
 bootcamp เรียนรู้ **Svelte 5 และ SvelteKit** แบบครบวงจรสำหรับนักพัฒนาที่มุ่งสู่
